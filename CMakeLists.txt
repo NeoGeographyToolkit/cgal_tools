@@ -28,7 +28,7 @@ find_package(Eigen3 3.2.0 REQUIRED) # 3.2.0 is minimum version
 include(CGAL_Eigen3_support)
 
 # Create individual tools
-set(program_names "fill_holes;smoothe_mesh;rm_connected_components;simplify_mesh")
+set(program_names "fill_holes;smoothe_mesh;rm_connected_components;simplify_mesh;poisson_remesh")
 foreach(program IN LISTS program_names)
 
     # Build 
